@@ -9,6 +9,7 @@ Users can browse products, reserve items temporarily, and either confirm or auto
 https://inventory-reservation-system-4mup.vercel.app/
 
 📦 GitHub Repository
+https://github.com/HariniMurali04/inventory-reservation-system
 
 
 ✨ Features
