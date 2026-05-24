@@ -13,7 +13,7 @@ export async function POST(
     await prisma.reservation.update({
       where: { id },
       data: {
-        status: "CONFIRMED"
+        status: "completed"
       }
     });
 
