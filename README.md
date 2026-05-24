@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Inventory Reservation System
+🧠 About the Project
 
-## Getting Started
+A full-stack Inventory Reservation System built with Next.js, Prisma, and PostgreSQL, enabling real-time stock management with reservation locking and countdown expiry.
 
-First, run the development server:
+Users can browse products, reserve items temporarily, and either confirm or auto-release stock when the timer expires.
 
-```bash
+🖼️ Live Demo
+https://inventory-reservation-system-4mup.vercel.app/
+
+📦 GitHub Repository
+
+
+✨ Features
+📦 Product inventory listing
+⏳ Real-time reservation system with countdown timer
+🔒 Stock locking during reservation
+✅ Confirm reservation workflow
+❌ Cancel reservation anytime
+🔄 Auto-release on timeout
+⚡ Full-stack API routes with Next.js
+🗄️ PostgreSQL database integration
+🧠 Prisma ORM for type-safe DB queries
+📱 Responsive UI with Tailwind CSS
+
+
+🛠️ Tech Stack
+Frontend: Next.js (App Router), TypeScript, Tailwind CSS
+Backend: Next.js API Routes
+Database: PostgreSQL
+ORM: Prisma
+Deployment: Vercel
+
+
+⚙️ How It Works
+User selects a product
+System temporarily locks stock
+Reservation timer starts
+User confirms or cancels reservation
+If timer expires → stock is automatically released
+
+
+🏗️ System Architecture
+Frontend (Next.js UI)
+        ↓
+API Routes (Next.js Backend)
+        ↓
+Prisma ORM Layer
+        ↓
+PostgreSQL Database
+
+Getting Started (Local Setup)
+git clone https://github.com/HariniMurali04/inventory-reservation-system.git
+cd inventory-reservation-system
+npm install
+
+Setup environment variables
+DATABASE_URL=your_postgresql_url
+Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Environment Variables
+Variable	Description
+DATABASE_URL	PostgreSQL connection string
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Home Page
+![Home](./public/screenshots/Home.png)
 
-## Deploy on Vercel
+### Reservation Page
+![Reservation](./public/screenshots/Reservation.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Current Stock Status
+![Current Stock Status](./public/screenshots/CurrentStockStatus.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Confirmation Page
+![Confirmation](./public/screenshots/ConfirmationPage.png)
+
+### Timer Page
+![Timer](./public/screenshots/TimerPage.png)
+
